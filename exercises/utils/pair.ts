@@ -1,5 +1,5 @@
-type PrimativeOrPair<T> = T | [T, T];
-export type Pair<T> = [PrimativeOrPair<T>, PrimativeOrPair<T>];
+// type PrimativeOrPair<T> = T | [T, T];
+export type Pair<T, S> = [T, S];
 
 /**
  * Construct a Pair
@@ -16,14 +16,14 @@ export type Pair<T> = [PrimativeOrPair<T>, PrimativeOrPair<T>];
  *   const y = pair(3, 4);
  *   const z = pair(x, y);
  */
-export function pair<T>(a: PrimativeOrPair<T>, b: PrimativeOrPair<T>): Pair<T> {
+export function pair<T, S>(a: T, b: S): Pair<T, S> {
   return [a, b];
 }
 
-export function head<T>(x: Pair<T>): PrimativeOrPair<T> {
+export function head<T, S>(x: Pair<T, S>): T {
   return x[0];
 }
 
-export function tail<T>(x: Pair<T>): PrimativeOrPair<T> {
+export function tail<T, S>(x: Pair<T, S>): S {
   return x[1];
 }

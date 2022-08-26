@@ -4,7 +4,7 @@ import { head, pair, Pair, tail } from "./utils/pair";
 // 2.1
 console.group("2.1");
 
-type RationalNumber = Pair<number>;
+type RationalNumber = Pair<number, number>;
 function print_rat(x: RationalNumber) {
   console.log(`${head(x)} / ${tail(x)}`);
 }

@@ -6,7 +6,7 @@
     {
       "label": "Run typescript script",
       "type": "shell",
-      "command": "yarn ts-node ${file}"
+      "command": "deno run ${file}"
     }
   ]
 }
