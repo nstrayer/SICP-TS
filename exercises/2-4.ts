@@ -2,6 +2,8 @@ console.group("2.4");
 
 type MessageFunction = (x: any, y: any) => any;
 
+
+
 function pair(x: any, y: any) {
   return (m: MessageFunction) => m(x, y);
 }

@@ -1,6 +1,5 @@
-import { gcd } from "./utils/gcd";
-import { head, pair, Pair, tail } from "./utils/pair";
-
+import { head, pair, Pair, tail } from "./utils/pair.ts";
+import { gcd } from "./utils/gcd.ts";
 // 2.1
 console.group("2.1");
 
